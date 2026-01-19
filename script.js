@@ -1,4 +1,5 @@
-function animatedText(){document.querySelectorAll('.animated-text').forEach(function(elem){
+function animatedText(){
+    document.querySelectorAll('.animated-text').forEach(function(elem){
     let spanParent  = document.createElement('span');
     let spanChild = document.createElement('span');
 
@@ -12,6 +13,23 @@ function animatedText(){document.querySelectorAll('.animated-text').forEach(func
     elem.appendChild(spanParent); 
 })
 }
+
+function animatedLine(){
+    document.querySelectorAll('.animated-line').forEach(function(elem){
+        let line1 = document.createElement('span');
+        let  line2= document.createElement('span');
+
+        line1.id = 'line1';
+        line2.id = 'line2';
+        line1.classList.add('line');
+        line2.classList.add('line');
+
+        elem.appendChild(line1);
+        elem.appendChild(line2);
+    })
+}
+
+animatedLine();
 
 animatedText();
 let tl = gsap.timeline();

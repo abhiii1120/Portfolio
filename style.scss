@@ -208,8 +208,46 @@ html, body {
     height: 100px;
      
     a{
+        position: relative;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 400;
+        color: var(--=secondary-color);
+
+        
     }
 }
+
+.animated-line{
+    .line{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: var(--secondary-color);
+        }
+    #line1{
+        left: 0;
+        width: 0;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1)  1s;
+        transition-delay: .1s;
+
+    }
+    #line2{
+        right: 0;
+        width: 100%;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1)  1s;
+
+    }
+       
+}
+.animated-line:hover{
+            #line2{
+                width: 0;
+            }
+            #line1{
+                width: 100%;
+            }
+        }
