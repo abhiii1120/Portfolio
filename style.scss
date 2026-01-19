@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: glancy;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-bold-700-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-bold-700-webfont.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-bold-italic-700-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-bold-italic-700-webfont.woff) format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-semibold-600-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-semibold-600-webfont.woff) format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-semibold-italic-600-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-semibold-italic-600-webfont.woff) format("woff");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-medium-500-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-medium-500-webfont.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-medium-italic-500-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-medium-italic-500-webfont.woff) format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-regular-400-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-regular-400-webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-regular-italic-400-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-regular-italic-400-webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-light-200-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-light-200-webfont.woff) format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-light-italic-200-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-light-italic-200-webfont.woff) format("woff");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-thin-100-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-thin-100-webfont.woff) format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: glancy;
+    src: url(./fonts/glancyr-glancyr-thin-italic-100-webfont.woff2) format("woff2"),
+         url(./fonts/glancyr-glancyr-thin-italic-100-webfont.woff) format("woff");
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: researcher;
+    // src: url(./fonts/otf/good-selection-good-selection-script-400.otf) format("opentype");
+    src: url(./fonts/researcher-researcher-squid-700.ttf) format("truetype");
+    font-weight: 700;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:#bde8f5;
+    --secondary-color:#0F2854;
+    --ternary-color:#1C4D8D;
+    --ternary-color2:#4988C4;
+}
+
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .fullscreen{
+        width: 100%;
+        height: 100%;
+        background-color: var(--secondary-color);
+
+        .loader{
+            width: 100%;
+            height: 100vh;
+            color: white;
+            position: absolute;
+        .heading{
+            position: absolute;
+            top: 4%;
+            left: 50%;
+            transform: translate(-50%,0);
+            font-weight: 400;
+
+            h5{
+                text-transform: uppercase;
+                font-weight: 200;
+                text-align: center;
+            }
+        }
+
+        h1{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 3vw;
+            font-weight: 400;
+
+            .good-selection{
+                font-family: researcher;
+                
+            }
+        }
+    }
+    }
+
+    .animated-element{
+        width: 100%;
+        position :absolute;
+        bottom: 0;
+        background-color: var(--ternary-color);
+    }
+
+    .main-content{
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        position: absolute;
+    }
+}
+
+.animated-text .parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+    .child{
+        display: block;
+        span{
+            display: inline-block;
+        }
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    width: 100%;
+    height: 100px;
+     
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
